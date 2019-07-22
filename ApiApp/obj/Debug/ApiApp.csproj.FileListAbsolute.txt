@@ -1,0 +1,13 @@
+C:\Users\Darryndu\source\repos\ApiApp\ApiApp\bin\Debug\ApiApp.exe.config
+C:\Users\Darryndu\source\repos\ApiApp\ApiApp\bin\Debug\ApiApp.exe
+C:\Users\Darryndu\source\repos\ApiApp\ApiApp\bin\Debug\ApiApp.pdb
+C:\Users\Darryndu\source\repos\ApiApp\ApiApp\bin\Debug\RestSharp.dll
+C:\Users\Darryndu\source\repos\ApiApp\ApiApp\bin\Debug\RestSharp.xml
+C:\Users\Darryndu\source\repos\ApiApp\ApiApp\obj\Debug\ApiApp.csprojAssemblyReference.cache
+C:\Users\Darryndu\source\repos\ApiApp\ApiApp\obj\Debug\ApiApp.Properties.Resources.resources
+C:\Users\Darryndu\source\repos\ApiApp\ApiApp\obj\Debug\ApiApp.csproj.GenerateResource.cache
+C:\Users\Darryndu\source\repos\ApiApp\ApiApp\obj\Debug\ApiApp.csproj.CoreCompileInputs.cache
+C:\Users\Darryndu\source\repos\ApiApp\ApiApp\obj\Debug\ApiApp.csproj.CopyComplete
+C:\Users\Darryndu\source\repos\ApiApp\ApiApp\obj\Debug\ApiApp.exe
+C:\Users\Darryndu\source\repos\ApiApp\ApiApp\obj\Debug\ApiApp.pdb
+C:\Users\Darryndu\source\repos\ApiApp\ApiApp\obj\Debug\ApiApp.FormApiApp.resources
