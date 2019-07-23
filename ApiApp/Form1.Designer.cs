@@ -30,7 +30,7 @@ namespace ApiApp
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnSend = new System.Windows.Forms.Button();
+            this.btnNumber = new System.Windows.Forms.Button();
             this.httpReqTxt = new System.Windows.Forms.TextBox();
             this.httpreqLbl = new System.Windows.Forms.Label();
             this.lblReqStatus = new System.Windows.Forms.Label();
@@ -38,21 +38,27 @@ namespace ApiApp
             this.lblBody = new System.Windows.Forms.Label();
             this.txtReqBody = new System.Windows.Forms.TextBox();
             this.btnClear = new System.Windows.Forms.Button();
+            this.lblTrivia = new System.Windows.Forms.Label();
+            this.rbtnTrivia = new System.Windows.Forms.RadioButton();
+            this.rbtnMath = new System.Windows.Forms.RadioButton();
+            this.rbtnDate = new System.Windows.Forms.RadioButton();
+            this.rbtnYear = new System.Windows.Forms.RadioButton();
+            this.btnRandom = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // btnSend
+            // btnNumber
             // 
-            this.btnSend.Location = new System.Drawing.Point(65, 289);
-            this.btnSend.Name = "btnSend";
-            this.btnSend.Size = new System.Drawing.Size(75, 23);
-            this.btnSend.TabIndex = 0;
-            this.btnSend.Text = "Send Request";
-            this.btnSend.UseVisualStyleBackColor = true;
-            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
+            this.btnNumber.Location = new System.Drawing.Point(509, 9);
+            this.btnNumber.Name = "btnNumber";
+            this.btnNumber.Size = new System.Drawing.Size(112, 23);
+            this.btnNumber.TabIndex = 0;
+            this.btnNumber.Text = "Get Number Fact";
+            this.btnNumber.UseVisualStyleBackColor = true;
+            this.btnNumber.Click += new System.EventHandler(this.btnSend_Click);
             // 
             // httpReqTxt
             // 
-            this.httpReqTxt.Location = new System.Drawing.Point(197, 50);
+            this.httpReqTxt.Location = new System.Drawing.Point(197, 9);
             this.httpReqTxt.Name = "httpReqTxt";
             this.httpReqTxt.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.httpReqTxt.Size = new System.Drawing.Size(279, 20);
@@ -61,16 +67,16 @@ namespace ApiApp
             // httpreqLbl
             // 
             this.httpreqLbl.AutoSize = true;
-            this.httpreqLbl.Location = new System.Drawing.Point(63, 53);
+            this.httpreqLbl.Location = new System.Drawing.Point(62, 9);
             this.httpreqLbl.Name = "httpreqLbl";
-            this.httpreqLbl.Size = new System.Drawing.Size(74, 13);
+            this.httpreqLbl.Size = new System.Drawing.Size(72, 13);
             this.httpreqLbl.TabIndex = 2;
-            this.httpreqLbl.Text = "HTTP Header";
+            this.httpreqLbl.Text = "Enter Number";
             // 
             // lblReqStatus
             // 
             this.lblReqStatus.AutoSize = true;
-            this.lblReqStatus.Location = new System.Drawing.Point(63, 98);
+            this.lblReqStatus.Location = new System.Drawing.Point(62, 98);
             this.lblReqStatus.Name = "lblReqStatus";
             this.lblReqStatus.Size = new System.Drawing.Size(37, 13);
             this.lblReqStatus.TabIndex = 4;
@@ -90,9 +96,9 @@ namespace ApiApp
             this.lblBody.AutoSize = true;
             this.lblBody.Location = new System.Drawing.Point(66, 137);
             this.lblBody.Name = "lblBody";
-            this.lblBody.Size = new System.Drawing.Size(74, 13);
+            this.lblBody.Size = new System.Drawing.Size(82, 13);
             this.lblBody.TabIndex = 7;
-            this.lblBody.Text = "Request Body";
+            this.lblBody.Text = "Response Body";
             // 
             // txtReqBody
             // 
@@ -114,11 +120,80 @@ namespace ApiApp
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
+            // lblTrivia
+            // 
+            this.lblTrivia.AutoSize = true;
+            this.lblTrivia.Location = new System.Drawing.Point(62, 38);
+            this.lblTrivia.Name = "lblTrivia";
+            this.lblTrivia.Size = new System.Drawing.Size(86, 13);
+            this.lblTrivia.TabIndex = 10;
+            this.lblTrivia.Text = "Choose Random";
+            // 
+            // rbtnTrivia
+            // 
+            this.rbtnTrivia.AutoSize = true;
+            this.rbtnTrivia.Location = new System.Drawing.Point(197, 38);
+            this.rbtnTrivia.Name = "rbtnTrivia";
+            this.rbtnTrivia.Size = new System.Drawing.Size(51, 17);
+            this.rbtnTrivia.TabIndex = 11;
+            this.rbtnTrivia.TabStop = true;
+            this.rbtnTrivia.Text = "Trivia";
+            this.rbtnTrivia.UseVisualStyleBackColor = true;
+            // 
+            // rbtnMath
+            // 
+            this.rbtnMath.AutoSize = true;
+            this.rbtnMath.Location = new System.Drawing.Point(197, 62);
+            this.rbtnMath.Name = "rbtnMath";
+            this.rbtnMath.Size = new System.Drawing.Size(49, 17);
+            this.rbtnMath.TabIndex = 12;
+            this.rbtnMath.TabStop = true;
+            this.rbtnMath.Text = "Math";
+            this.rbtnMath.UseVisualStyleBackColor = true;
+            // 
+            // rbtnDate
+            // 
+            this.rbtnDate.AutoSize = true;
+            this.rbtnDate.Location = new System.Drawing.Point(298, 38);
+            this.rbtnDate.Name = "rbtnDate";
+            this.rbtnDate.Size = new System.Drawing.Size(48, 17);
+            this.rbtnDate.TabIndex = 13;
+            this.rbtnDate.TabStop = true;
+            this.rbtnDate.Text = "Date";
+            this.rbtnDate.UseVisualStyleBackColor = true;
+            // 
+            // rbtnYear
+            // 
+            this.rbtnYear.AutoSize = true;
+            this.rbtnYear.Location = new System.Drawing.Point(298, 62);
+            this.rbtnYear.Name = "rbtnYear";
+            this.rbtnYear.Size = new System.Drawing.Size(47, 17);
+            this.rbtnYear.TabIndex = 14;
+            this.rbtnYear.TabStop = true;
+            this.rbtnYear.Text = "Year";
+            this.rbtnYear.UseVisualStyleBackColor = true;
+            // 
+            // btnRandom
+            // 
+            this.btnRandom.Location = new System.Drawing.Point(509, 56);
+            this.btnRandom.Name = "btnRandom";
+            this.btnRandom.Size = new System.Drawing.Size(112, 23);
+            this.btnRandom.TabIndex = 15;
+            this.btnRandom.Text = "Get Random Fact";
+            this.btnRandom.UseVisualStyleBackColor = true;
+            this.btnRandom.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormApiApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 335);
+            this.ClientSize = new System.Drawing.Size(734, 335);
+            this.Controls.Add(this.btnRandom);
+            this.Controls.Add(this.rbtnYear);
+            this.Controls.Add(this.rbtnDate);
+            this.Controls.Add(this.rbtnMath);
+            this.Controls.Add(this.rbtnTrivia);
+            this.Controls.Add(this.lblTrivia);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.txtReqBody);
             this.Controls.Add(this.lblBody);
@@ -126,7 +201,7 @@ namespace ApiApp
             this.Controls.Add(this.lblReqStatus);
             this.Controls.Add(this.httpreqLbl);
             this.Controls.Add(this.httpReqTxt);
-            this.Controls.Add(this.btnSend);
+            this.Controls.Add(this.btnNumber);
             this.Name = "FormApiApp";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "Number Facts";
@@ -142,7 +217,7 @@ namespace ApiApp
 
         #endregion
 
-        private System.Windows.Forms.Button btnSend;
+        private System.Windows.Forms.Button btnNumber;
         private System.Windows.Forms.TextBox httpReqTxt;
         private System.Windows.Forms.Label httpreqLbl;
         private System.Windows.Forms.Label lblReqStatus;
@@ -150,6 +225,12 @@ namespace ApiApp
         private System.Windows.Forms.Label lblBody;
         private System.Windows.Forms.TextBox txtReqBody;
         private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Label lblTrivia;
+        private System.Windows.Forms.RadioButton rbtnTrivia;
+        private System.Windows.Forms.RadioButton rbtnMath;
+        private System.Windows.Forms.RadioButton rbtnDate;
+        private System.Windows.Forms.RadioButton rbtnYear;
+        private System.Windows.Forms.Button btnRandom;
     }
 }
 
